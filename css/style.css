@@ -10,15 +10,67 @@ body {
   font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
-.navgation {
-  background-color: yellowgreen;
-}
+
 .navgation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.container {
+  margin: auto;
   max-width: 1200px;
-  margin: 0 auto;
+}
+nav {
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  position: static;
+  top: 0;
+  margin-bottom: 32px;
+  background-color: white;
+  padding: 10px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.heroconternt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.heroconternt h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+.text {
+  background-color: green;
+  color: white;
+  padding: 5px 5px;
+  align-self: flex-start;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2 ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+  transition: 0.2 ease-in-out;
+}
+.explore {
+  background-color: darkgoldenrod;
+  align-self: flex-start;
+}
+@media (max-width: 780px) {
+  .hero {
+    flex-direction: column;
+  }
+  .heroimage {
+    width: 90%;
+  }
+}
+.c {
+  display: flex;
+  margin-top: 100px;
+  padding: 50px;
+  gap: 20px;
 }
