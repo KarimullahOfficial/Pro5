@@ -73,4 +73,53 @@ button:hover {
   margin-top: 100px;
   padding: 50px;
   gap: 20px;
+  justify-content: center;
+}
+.feature {
+  display: flex;
+  gap: 10px;
+}
+.divider {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu .tag {
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    " I1 I1 I2 I3"
+    " I1 I1 I2 I7"
+    " I4 I5 I6 I7";
+}
+
+.item1 {
+  grid-area: I1;
+}
+.item2 {
+  grid-area: I2;
+}
+.item3 {
+  grid-area: I3;
+}
+.item4 {
+  grid-area: I4;
+}
+.item5 {
+  grid-area: I5;
+}
+.item6 {
+  grid-area: I6;
+}
+.item7 {
+  grid-area: I7;
 }
